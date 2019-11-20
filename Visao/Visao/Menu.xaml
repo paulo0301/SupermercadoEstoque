@@ -1,0 +1,23 @@
+﻿<Window x:Class="Visao.Menu"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Visao"
+        mc:Ignorable="d"
+        Title="Menu" Height="420" Width="350">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <TextBlock Text="MENU" VerticalAlignment="Center" FontSize="25" HorizontalAlignment="Center"/>
+        <Button Content="DONO" Grid.Row="1" VerticalAlignment="Center" FontSize="18" Height="48" Width="280" BorderThickness="2" HorizontalAlignment="Center"/>
+        <Button Content="GERENTE" Grid.Row="2" VerticalAlignment="Center" FontSize="18" Height="48" Width="280" BorderThickness="2" HorizontalAlignment="Center"/>
+        <Button Content="OPERADOR DE CAIXA" Grid.Row="3" VerticalAlignment="Center" FontSize="18" Height="48" Width="280" BorderThickness="2" HorizontalAlignment="Center"/>
+        <Button Content="FORNECEDOR" Grid.Row="4" VerticalAlignment="Center" FontSize="18" Height="48" Width="280" BorderThickness="2" HorizontalAlignment="Center"/>
+    </Grid>
+</Window>
