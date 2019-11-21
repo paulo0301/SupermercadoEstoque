@@ -55,6 +55,9 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="FolhaDePagamento.xaml.cs">
+      <DependentUpon>FolhaDePagamento.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Fornecedor1.xaml.cs">
       <DependentUpon>Fornecedor1.xaml</DependentUpon>
     </Compile>
@@ -67,11 +70,18 @@
     <Compile Include="RegistrarFuncionario2.xaml.cs">
       <DependentUpon>RegistrarFuncionario2.xaml</DependentUpon>
     </Compile>
+    <Compile Include="RelatórioDeVendasECompras.xaml.cs">
+      <DependentUpon>RelatórioDeVendasECompras.xaml</DependentUpon>
+    </Compile>
     <Compile Include="VerificarEstoque.xaml.cs">
       <DependentUpon>VerificarEstoque.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Page Include="CadastrarCompras.xaml">
+    <Page Include="CadastrarVendas.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="FolhaDePagamento.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -91,8 +101,8 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="CadastrarCompras.xaml.cs">
-      <DependentUpon>CadastrarCompras.xaml</DependentUpon>
+    <Compile Include="CadastrarVendas.xaml.cs">
+      <DependentUpon>CadastrarVendas.xaml</DependentUpon>
     </Compile>
     <Compile Include="Login.xaml.cs">
       <DependentUpon>Login.xaml</DependentUpon>
@@ -106,6 +116,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="RegistrarFuncionario2.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="RelatórioDeVendasECompras.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
