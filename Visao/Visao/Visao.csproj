@@ -55,6 +55,9 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="CadastrarCompras.xaml.cs">
+      <DependentUpon>CadastrarCompras.xaml</DependentUpon>
+    </Compile>
     <Compile Include="FolhaDePagamento.xaml.cs">
       <DependentUpon>FolhaDePagamento.xaml</DependentUpon>
     </Compile>
@@ -77,6 +80,10 @@
       <DependentUpon>VerificarEstoque.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="CadastrarCompras.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="CadastrarVendas.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>

@@ -1,0 +1,43 @@
+﻿<Window x:Class="Visao.CadastrarCompras"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Visao"
+        mc:Ignorable="d"
+        Title="CadastrarCompras" Height="700" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition Height="4*"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <TextBlock Text="PESQUISAR FORNECEDOR" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="15,34,0,0" />
+        <StackPanel Orientation="Horizontal" Margin="14,52,0,0">
+            <TextBox HorizontalAlignment="Left" VerticalAlignment="Top" Height="45" Background="#FFE6E6E6" BorderBrush="{x:Null}" Grid.Row="2" Grid.Column="1" Width="300"/>
+            <Button Height="45" HorizontalAlignment="Left" VerticalAlignment="Top" Width="50" BorderBrush="{x:Null}" Background="{x:Null}">
+                <Image Source="search.png" Height="32" Width="32"/>
+            </Button>
+        </StackPanel>
+        <TextBlock Text="PESQUISAR PRODUTO" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="15,34,0,0" />
+        <StackPanel Orientation="Horizontal" Margin="14,52,0,0" Grid.Column="1">
+            <TextBox HorizontalAlignment="Left" VerticalAlignment="Top" Height="45" Background="#FFE6E6E6" BorderBrush="{x:Null}" Grid.Row="2" Grid.Column="1" Width="300"/>
+            <Button Height="45" HorizontalAlignment="Left" VerticalAlignment="Top" Width="50" BorderBrush="{x:Null}" Background="{x:Null}">
+                <Image Source="search.png" Height="32" Width="32"/>
+            </Button>
+        </StackPanel>
+        <GroupBox Header="FORNECEDORES" Margin="7" BorderThickness="0,0,0,0" Grid.Row="1">
+            <DataGrid Margin="0,5,0,0"/>
+        </GroupBox>
+        <GroupBox Header="PRODUTOS" Grid.Column="1" Margin="7" BorderThickness="0,0,0,0" Grid.Row="1">
+            <DataGrid Margin="0,5,0,0"/>
+        </GroupBox>
+        <TextBlock Text="QUANTIDADE" Grid.Column="1" Grid.Row="2" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="14,2,0,0" />
+        <TextBox HorizontalAlignment="Left" VerticalAlignment="Top"  Height="45" Margin="14,20,0,0" Background="#FFE6E6E6" BorderBrush="{x:Null}" Grid.Row="2" Grid.Column="1" Width="105"/>
+        <Button Content="COMPRAR" HorizontalAlignment="Left" VerticalAlignment="Top" Width="180" Height="50" Background="#FFE6E6E6" BorderBrush="#FF707070" Grid.Row="2" Grid.Column="1" BorderThickness="2" Margin="207,15,0,0"/>
+    </Grid>
+</Window>
