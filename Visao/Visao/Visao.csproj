@@ -67,6 +67,10 @@
     <Compile Include="RegistrarFuncionario2.xaml.cs">
       <DependentUpon>RegistrarFuncionario2.xaml</DependentUpon>
     </Compile>
+    <Compile Include="VerificarEstoque.xaml.cs">
+      <DependentUpon>VerificarEstoque.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
     <Page Include="CadastrarCompras.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -102,6 +106,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="RegistrarFuncionario2.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="VerificarEstoque.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
