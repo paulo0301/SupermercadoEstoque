@@ -16,28 +16,30 @@
             <RowDefinition Height="4*"/>
             <RowDefinition/>
         </Grid.RowDefinitions>
-        <TextBlock Text="PESQUISAR FORNECEDOR" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="15,34,0,0" />
-        <StackPanel Orientation="Horizontal" Margin="14,52,0,0">
-            <TextBox HorizontalAlignment="Left" VerticalAlignment="Top" Height="45" Background="#FFE6E6E6" BorderBrush="{x:Null}" Grid.Row="2" Grid.Column="1" Width="300"/>
-            <Button Height="45" HorizontalAlignment="Left" VerticalAlignment="Top" Width="50" BorderBrush="{x:Null}" Background="{x:Null}">
-                <Image Source="search.png" Height="32" Width="32"/>
-            </Button>
-        </StackPanel>
-        <TextBlock Text="PESQUISAR PRODUTO" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="15,34,0,0" />
-        <StackPanel Orientation="Horizontal" Margin="14,52,0,0" Grid.Column="1">
-            <TextBox HorizontalAlignment="Left" VerticalAlignment="Top" Height="45" Background="#FFE6E6E6" BorderBrush="{x:Null}" Grid.Row="2" Grid.Column="1" Width="300"/>
-            <Button Height="45" HorizontalAlignment="Left" VerticalAlignment="Top" Width="50" BorderBrush="{x:Null}" Background="{x:Null}">
-                <Image Source="search.png" Height="32" Width="32"/>
-            </Button>
-        </StackPanel>
-        <GroupBox Header="FORNECEDORES" Margin="7" BorderThickness="0,0,0,0" Grid.Row="1">
-            <DataGrid Margin="0,5,0,0"/>
+        <GroupBox Header="Fornecedor" Margin="5">
+            <StackPanel Orientation="Horizontal" VerticalAlignment="Center" Margin="5 10">
+                <TextBox HorizontalAlignment="Left" VerticalAlignment="Top" Height="45"  Width="300" />
+                <Button Height="45" HorizontalAlignment="Left" VerticalAlignment="Top" Width="50" BorderBrush="{x:Null}" Background="{x:Null}">
+                    <Image Source="search.png" Height="32" Width="32"/>
+                </Button>
+            </StackPanel>
         </GroupBox>
-        <GroupBox Header="PRODUTOS" Grid.Column="1" Margin="7" BorderThickness="0,0,0,0" Grid.Row="1">
-            <DataGrid Margin="0,5,0,0"/>
+        <GroupBox Header="Produto" Margin="5" Grid.Column="1">
+            <StackPanel Orientation="Horizontal" VerticalAlignment="Center" Grid.Column="1">
+                <TextBox HorizontalAlignment="Left" VerticalAlignment="Top" Height="45" Width="300"/>
+                <Button Height="45" HorizontalAlignment="Left" VerticalAlignment="Top" Width="50" BorderBrush="{x:Null}" Background="{x:Null}">
+                    <Image Source="search.png" Height="32" Width="32"/>
+                </Button>
+            </StackPanel>
         </GroupBox>
-        <TextBlock Text="QUANTIDADE" Grid.Column="1" Grid.Row="2" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="14,2,0,0" />
-        <TextBox HorizontalAlignment="Left" VerticalAlignment="Top"  Height="45" Margin="14,20,0,0" Background="#FFE6E6E6" BorderBrush="{x:Null}" Grid.Row="2" Grid.Column="1" Width="105"/>
-        <Button Content="COMPRAR" HorizontalAlignment="Left" VerticalAlignment="Top" Width="180" Height="50" Background="#FFE6E6E6" BorderBrush="#FF707070" Grid.Row="2" Grid.Column="1" BorderThickness="2" Margin="207,15,0,0"/>
+        <GroupBox Header="Fornecedores" Margin="7" BorderThickness="0,0,0,0" Grid.Row="1">
+            <DataGrid Margin="0 5"/>
+        </GroupBox>
+        <GroupBox Header="Produtos" Grid.Column="1" Margin="7" BorderThickness="0,0,0,0" Grid.Row="1">
+            <DataGrid Margin="0 5"/>
+        </GroupBox>
+        <TextBlock Text="Quantidade" Grid.Column="1" Grid.Row="2" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="14,2,0,0" />
+        <TextBox HorizontalAlignment="Left" VerticalAlignment="Top"  Height="45" Margin="14,20,0,0" Grid.Row="2" Grid.Column="1" Width="105"/>
+        <Button Content="Comprar" HorizontalAlignment="Left" VerticalAlignment="Top" Width="180" Height="50" Grid.Row="2" Grid.Column="1" Margin="207,15,0,0"/>
     </Grid>
 </Window>
