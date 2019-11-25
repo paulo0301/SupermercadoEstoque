@@ -17,10 +17,10 @@
             <RowDefinition/>
             <RowDefinition/>
         </Grid.RowDefinitions>
-        <Button Content="Inserir funcionário" HorizontalAlignment="Center" VerticalAlignment="Center" Width="222" Height="50" Grid.Row="0" Background="#FFE6E6E6" BorderBrush="#FF707070"/>
-        <Button Content="Listar funcionários" HorizontalAlignment="Center" VerticalAlignment="Center" Width="222" Height="50" Grid.Row="1" Background="#FFE6E6E6" BorderBrush="#FF707070"/>
-        <Button Content="Deletar funcionário" HorizontalAlignment="Center" VerticalAlignment="Center" Width="222" Height="50" Grid.Row="2" Background="#FFE6E6E6" BorderBrush="#FF707070"/>
-        <Button Content="Atualizar funcionário" HorizontalAlignment="Center" VerticalAlignment="Center" Width="222" Height="50" Grid.Row="3" Background="#FFE6E6E6" BorderBrush="#FF707070"/>
+        <Button Content="Inserir Funcionário" HorizontalAlignment="Center" VerticalAlignment="Center" Width="222" Height="50" Grid.Row="0" />
+        <Button Content="Listar Funcionários" HorizontalAlignment="Center" VerticalAlignment="Center" Width="222" Height="50" Grid.Row="1" />
+        <Button Content="Deletar Funcionário" HorizontalAlignment="Center" VerticalAlignment="Center" Width="222" Height="50" Grid.Row="2" />
+        <Button Content="Atualizar Funcionário" HorizontalAlignment="Center" VerticalAlignment="Center" Width="222" Height="50" Grid.Row="3" />
         <TextBlock Text="Funcionários" Grid.Column="1" Margin="10,10,-10,95" Grid.RowSpan="2"/>
         <DataGrid Grid.Column="1" Grid.RowSpan="4" Margin="10,30,10,10"/>
     </Grid>

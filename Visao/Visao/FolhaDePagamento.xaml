@@ -11,7 +11,7 @@
             <ColumnDefinition  Width="1.35*"/>
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
-        <GroupBox Header="PAGAMENTO" Margin="10">
+        <GroupBox Header="Pagamento" Margin="10">
             <Grid>
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition/>
@@ -24,17 +24,17 @@
                     <RowDefinition/>
                     <RowDefinition/>
                 </Grid.RowDefinitions>
-                <Button Content="FUNCIONÁRIOS PAGOS" HorizontalAlignment="Center" VerticalAlignment="Center" Width="180" Height="50" Background="#FFE6E6E6" BorderBrush="#FF707070"/>
-                <Button Content="FUNCIONÁRIOS NÃO PAGOS" HorizontalAlignment="Center" VerticalAlignment="Center" Width="180" Height="50" Background="#FFE6E6E6" BorderBrush="#FF707070" Grid.Row="1"/>
-                <Button Content="PAGAR FUNCIONÁRIO" HorizontalAlignment="Center" VerticalAlignment="Center" Width="180" Height="50" Background="#FFE6E6E6" BorderBrush="#FF707070" Grid.Row="2"/>
-                <Button Content="PAGAR A TODOS" HorizontalAlignment="Center" VerticalAlignment="Center" Width="180" Height="50" Background="#FFE6E6E6" BorderBrush="#FF707070" Grid.Row="3"/>
-                <TextBlock Text="PESQUISAR PRODUTO" VerticalAlignment="Top" HorizontalAlignment="Left" Grid.Row="4" Margin="16,0,0,0"/>
-                <TextBox HorizontalAlignment="Center" VerticalAlignment="Center"  Height="45" Margin="0,0,1,0" Background="#FFE6E6E6" BorderBrush="{x:Null}" Grid.Row="4" Width="180"/>
-                <Button Content="PESQUISAR" HorizontalAlignment="Center" VerticalAlignment="Center" Width="180" Height="50" Background="#FFE6E6E6" BorderBrush="#FF707070" Grid.Row="4" Grid.Column="1"/>
+                <Button Content="Funcionários Pagos" HorizontalAlignment="Center" VerticalAlignment="Center" Width="180" Height="50" />
+                <Button Content="Funcionários Não Pagos" HorizontalAlignment="Center" VerticalAlignment="Center" Width="180" Height="50" Grid.Row="1"/>
+                <Button Content="Pagar Funcionário" HorizontalAlignment="Center" VerticalAlignment="Center" Width="180" Height="50" Grid.Row="2"/>
+                <Button Content="Pagar Todos os Funcionários" HorizontalAlignment="Center" VerticalAlignment="Center" Width="180" Height="50" Grid.Row="3"/>
+                <TextBlock Text="Pesquisar Produto" VerticalAlignment="Top" HorizontalAlignment="Left" Grid.Row="4" Margin="16,0,0,0"/>
+                <TextBox HorizontalAlignment="Center" VerticalAlignment="Center"  Height="45" Margin="0,0,1,0" Grid.Row="4" Width="180"/>
+                <Button Content="Buscar" HorizontalAlignment="Center" VerticalAlignment="Center" Width="180" Height="50" Grid.Row="4" Grid.Column="1"/>
             </Grid>
         </GroupBox>
-        <GroupBox Header="FUNCIONÁRIOS" Grid.Column="1" Margin="7" BorderThickness="0,0,0,0">
-            <DataGrid Margin="0,5,0,0"/>
+        <GroupBox Header="Lista de Funcionários" Grid.Column="1" Margin="7" BorderThickness="0,0,0,0">
+            <DataGrid Margin="0 5"/>
         </GroupBox>
     </Grid>
 </Window>

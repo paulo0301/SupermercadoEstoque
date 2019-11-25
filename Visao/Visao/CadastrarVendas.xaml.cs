@@ -17,9 +17,9 @@ namespace Visao
     /// <summary>
     /// Lógica interna para CadastrarCompras.xaml
     /// </summary>
-    public partial class CadastrarCompras : Window
+    public partial class CadastrarVendas : Window
     {
-        public CadastrarCompras()
+        public CadastrarVendas()
         {
             InitializeComponent();
         }

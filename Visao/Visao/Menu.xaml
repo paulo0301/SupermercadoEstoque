@@ -15,9 +15,9 @@
             <RowDefinition/>
         </Grid.RowDefinitions>
         <TextBlock Text="MENU" VerticalAlignment="Center" FontSize="25" HorizontalAlignment="Center"/>
-        <Button Content="DONO" Grid.Row="1" VerticalAlignment="Center" FontSize="18" Height="48" Width="280" BorderThickness="2" HorizontalAlignment="Center"/>
-        <Button Content="GERENTE" Grid.Row="2" VerticalAlignment="Center" FontSize="18" Height="48" Width="280" BorderThickness="2" HorizontalAlignment="Center"/>
-        <Button Content="OPERADOR DE CAIXA" Grid.Row="3" VerticalAlignment="Center" FontSize="18" Height="48" Width="280" BorderThickness="2" HorizontalAlignment="Center"/>
-        <Button Content="FORNECEDOR" Grid.Row="4" VerticalAlignment="Center" FontSize="18" Height="48" Width="280" BorderThickness="2" HorizontalAlignment="Center"/>
+        <Button Content="Dono" Grid.Row="1" VerticalAlignment="Center" FontSize="18" Height="48" Width="280" BorderThickness="2" HorizontalAlignment="Center"/>
+        <Button Content="Gerente" Grid.Row="2" VerticalAlignment="Center" FontSize="18" Height="48" Width="280" BorderThickness="2" HorizontalAlignment="Center"/>
+        <Button Content="Operador de Caixa" Grid.Row="3" VerticalAlignment="Center" FontSize="18" Height="48" Width="280" BorderThickness="2" HorizontalAlignment="Center"/>
+        <Button Content="Fornecedor" Grid.Row="4" VerticalAlignment="Center" FontSize="18" Height="48" Width="280" BorderThickness="2" HorizontalAlignment="Center"/>
     </Grid>
 </Window>

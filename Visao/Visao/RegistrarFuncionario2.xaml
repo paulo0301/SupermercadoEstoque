@@ -7,36 +7,68 @@
         mc:Ignorable="d"
         Title="RegistrarFuncionario2" Height="450" Width="800">
     <Grid>
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition/>
-            <ColumnDefinition/>
-            <ColumnDefinition/>
-        </Grid.ColumnDefinitions>
-        <Grid.RowDefinitions>
-            <RowDefinition/>
-            <RowDefinition/>
-            <RowDefinition/>
-            <RowDefinition Height=".6*"/>
-            <RowDefinition/>
-        </Grid.RowDefinitions>
-        <TextBlock Text="NOME" HorizontalAlignment="Left" Margin="20,15,0,0"/>
-        <TextBlock Text="EMAIL" Grid.Row="1" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="20,15,0,0" />
-        <TextBlock Text="TELEFONE" Grid.Row="2" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="20,15,0,0" />
-        <TextBlock Text="CPF" Grid.Column="1"  HorizontalAlignment="Left" VerticalAlignment="Top" Margin="20,15,0,0" />
-        <TextBlock Text="NÉMERO CONTA" Grid.Row="1" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="20,15,0,0" />
-        <TextBlock Text="FORMAÇÃO" Grid.Row="2" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="20,15,0,0" />
-        <TextBox HorizontalAlignment="Left" VerticalAlignment="Top" Width="220" Margin="20,35,0,0" Height="35" Background="#FFE6E6E6" BorderBrush="{x:Null}"/>
-        <TextBox HorizontalAlignment="Left" VerticalAlignment="Top" Grid.Row="1" Width="220" Margin="20,35,0,0" Height="35" Background="#FFE6E6E6" BorderBrush="{x:Null}"/>
-        <TextBox HorizontalAlignment="Left" VerticalAlignment="Top" Grid.Row="2" Width="220" Margin="20,35,0,0" Height="35" Background="#FFE6E6E6" BorderBrush="{x:Null}"/>
-        <TextBox HorizontalAlignment="Left" VerticalAlignment="Top" Grid.Column="1" Width="220" Margin="20,35,0,0" Height="35" Background="#FFE6E6E6" BorderBrush="{x:Null}"/>
-        <TextBox HorizontalAlignment="Left" VerticalAlignment="Top" Grid.Row="1" Grid.Column="1" Width="220" Margin="20,35,0,0" Height="35" Background="#FFE6E6E6" BorderBrush="{x:Null}"/>
-        <TextBox HorizontalAlignment="Left" VerticalAlignment="Top" Grid.Row="2" Grid.Column="1" Width="220" Margin="20,35,0,0" Height="35" Background="#FFE6E6E6" BorderBrush="{x:Null}"/>
-        <Image Grid.Column="2" Grid.RowSpan="3"  Height="200" VerticalAlignment="Top" Width="220" Margin="0,10,0,0"/>
-        <Button Content="ALTERAR FOTO" HorizontalAlignment="Center" VerticalAlignment="Top" Grid.Column="2" Grid.Row="2" Width="220" Height="40" Background="#FFE6E6E6" BorderBrush="#FF707070" Margin="0,40,0,0"/>
-        <RadioButton Content="Gerente" HorizontalAlignment="Left" Margin="10,8,0,0" Grid.Row="3" VerticalAlignment="Top" FontSize="15"/>
-        <RadioButton Content="Operador de caixa" HorizontalAlignment="Left" Margin="10,30,0,0" Grid.Row="3" VerticalAlignment="Top" FontSize="15"/>
-        <Button Content="Confirmar" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Column="1" Grid.Row="4" Width="220" Height="40" Background="#FFE6E6E6" BorderBrush="#FF707070"/>
+        <GroupBox Header="Funcionário" Margin="10">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                </Grid.RowDefinitions>
 
+                <Image Grid.RowSpan="3" Margin="10" />
+                <Button Grid.Row="3" Click="InserirFoto" Content="Inserir Foto" VerticalAlignment="Top" HorizontalAlignment="Center" Margin="10" Width="150" Height="30"/>
+                <Button Grid.Row="4" Click="AtualizarFoto" Content="Alterar Foto" VerticalAlignment="Top" HorizontalAlignment="Center" Margin="10" Width="150" Height="30"/>
 
+                <StackPanel Grid.Column="1" Orientation="Vertical"  Margin="5 0">
+                    <TextBlock Text="Nome " Margin="0 10"/>
+                    <TextBox HorizontalAlignment="Left" VerticalAlignment="Top" Height="30"  Width="150" />
+                </StackPanel>
+
+                <StackPanel Grid.Column="1" Grid.Row="1" Orientation="Vertical"  Margin="5 0">
+                    <TextBlock Text="Email " Margin="0 10"/>
+                    <TextBox HorizontalAlignment="Left" VerticalAlignment="Top" Height="30"  Width="150" />
+                </StackPanel>
+
+                <StackPanel Grid.Column="1" Grid.Row="2" Orientation="Vertical"  Margin="5 0">
+                    <TextBlock Text="Telefone " Margin="0 10"/>
+                    <TextBox HorizontalAlignment="Left" VerticalAlignment="Top" Height="30"  Width="150" />
+                </StackPanel>
+
+                <StackPanel Grid.Column="2" Orientation="Vertical"  Margin="5 0">
+                    <TextBlock Text="CPF " Margin="0 10"/>
+                    <TextBox HorizontalAlignment="Left" VerticalAlignment="Top" Height="30"  Width="150" />
+                </StackPanel>
+
+                <StackPanel Grid.Column="2" Grid.Row="1" Orientation="Vertical"  Margin="5 0">
+                    <TextBlock Text="Numero da Conta " Margin="0 10"/>
+                    <TextBox HorizontalAlignment="Left" VerticalAlignment="Top" Height="30"  Width="150" />
+                </StackPanel>
+
+                <StackPanel Grid.Column="2" Grid.Row="2" Orientation="Vertical"  Margin="5 0">
+                    <TextBlock Text="Formação" Margin="0 10"/>
+                    <TextBox HorizontalAlignment="Left" VerticalAlignment="Top" Height="30"  Width="150" />
+                </StackPanel>
+
+                <GroupBox Header="Função" Margin="5" Grid.Column="1" Grid.Row="3" HorizontalAlignment="Left">
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition />
+                            <ColumnDefinition />
+                        </Grid.ColumnDefinitions>
+                        <RadioButton Content="Gerente" VerticalAlignment="Center" Margin="5"/>
+                        <RadioButton Content="Oper. de Caixa" Grid.Column="1" VerticalAlignment="Center" Margin="5"/>
+                    </Grid>
+                </GroupBox>
+
+                <Button Grid.Row="3" Grid.Column="2" Click="InserirFuncionario" Content="Inserir" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="5" Width="150" Height="30"/>
+            </Grid>
+        </GroupBox>
     </Grid>
 </Window>
