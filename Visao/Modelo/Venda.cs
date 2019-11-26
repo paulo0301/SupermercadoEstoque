@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Modelo
 {
-    class Venda
+    public class Venda
     {
         public int Id { get; set; }
         public DateTime Data { get; set; }

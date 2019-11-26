@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Modelo;
+using Persistencia;
 
 namespace Negocio
 {
@@ -15,8 +17,8 @@ namespace Negocio
             PFornecedor pf = new PFornecedor();
             fornecedores = pf.Open();
             int i = 0;
-            foreach (Fornecedor x in fornecedores) if (x.Id > i) i = x.Id;
-            f.Id = i + 1;
+            foreach (Fornecedor x in fornecedores) if (Convert.ToInt32(x.Id) > i) i = Convert.ToInt32(x.Id);
+            f.Id = (i + 1).ToString();
             fornecedores.Add(f);
             pf.Save(fornecedores);
         }
@@ -34,7 +36,7 @@ namespace Negocio
             fornecedores.Add(f);
             pf.Save(fornecedores);
         }
-        public List<MContato> Select()
+        public List<Fornecedor> Select()
         {
             PFornecedor pf = new PFornecedor();
             return pf.Open().OrderBy(c => c.Nome).ToList();

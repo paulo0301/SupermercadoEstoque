@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Modelo
 {
-    class Compra
+    public class Compra
     {
         public DateTime Data { get; set; }
         public int IdFornecedor { get; set; }
